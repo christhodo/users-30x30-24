@@ -1,6 +1,6 @@
 <mat-card>
   <mat-card-title>
-    Kickers
+    Users
   </mat-card-title>
   <mat-card-content>
     <mat-list data-cy="kickers-list">
@@ -11,7 +11,7 @@
         (click)="selected.emit(kicker)"
       >
         <span matLine attr.data-cy="kicker-{{ kicker.id }}-item-title">{{
-          kicker.title
+          kicker.name
         }}</span>
         <button
           *ngIf="!readonly"

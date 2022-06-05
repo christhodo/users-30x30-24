@@ -7,12 +7,12 @@ import { environment } from 'apps/dashboard/src/environments/environment';
   providedIn: 'root',
 })
 export class KickersService {
-  model = 'kickers';
+  model = 'users';
 
   constructor(private http: HttpClient) {}
 
   all() {
-    return this.http.get<Kicker[]>(this.getUrl());
+    return this.http.get<Kicker[]>(this.getUrl()).pipe();
   }
 
   find(id: string) {
@@ -32,7 +32,7 @@ export class KickersService {
   }
 
   private getUrl() {
-    return `${environment.apiEndpoint}${this.model}`;
+    return `${environment.apiEndpoint}/${this.model}`;
   }
 
   private getUrlWithId(id) {

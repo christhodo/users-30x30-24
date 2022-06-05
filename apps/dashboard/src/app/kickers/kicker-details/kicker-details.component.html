@@ -4,7 +4,7 @@
       Editing {{ originalTitle }}
     </span>
     <ng-template #elseBlock>
-      Select Kicker
+      Select User
     </ng-template>
   </mat-card-title>
   <form #form="ngForm" (submit)="saved.emit(currentKicker)">
@@ -12,20 +12,20 @@
       <mat-form-field class="full-width">
         <input
           matInput
-          placeholder="Title"
-          [(ngModel)]="currentKicker.title"
+          placeholder="Name"
+          [(ngModel)]="currentKicker.name"
           type="text"
-          name="title"
+          name="name"
           required
         />
       </mat-form-field>
       <mat-form-field class="full-width">
         <input
           matInput
-          placeholder="Description"
-          [(ngModel)]="currentKicker.description"
+          placeholder="Phone"
+          [(ngModel)]="currentKicker.phone"
           type="text"
-          name="description"
+          name="phone"
           required
         />
       </mat-form-field>
