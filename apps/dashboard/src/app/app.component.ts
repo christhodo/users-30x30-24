@@ -9,7 +9,7 @@ import { AuthGuardService } from '@kicker-angular/core-data';
 export class AppComponent {
   title = '';
 
-  links = [{ path: '/kickers', icon: 'view_list', title: 'Kickers' }];
+  links = [{ path: '/kickers', icon: 'view_list', title: 'Users' }];
 
   userIsAuthenticated = this.authService.isAuthenticated;
   constructor(private authService: AuthGuardService) {}

@@ -10,7 +10,7 @@ import { User } from '@kicker-angular/api-interfaces';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  userInfo = { email: 'kicker@n.com', password: 'pass' };
+  userInfo = { email: 'users@n.com', password: 'pass' };
   form: FormGroup;
 
   constructor(

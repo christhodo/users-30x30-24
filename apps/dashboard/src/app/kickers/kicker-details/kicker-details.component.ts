@@ -10,7 +10,7 @@ export class KickerDetailsComponent {
   currentKicker: Kicker;
   originalTitle = '';
   @Input() set kicker(value: Kicker) {
-    if (value) this.originalTitle = value.title;
+    if (value) this.originalTitle = value.name;
     this.currentKicker = { ...value };
   }
   @Output() saved = new EventEmitter();
